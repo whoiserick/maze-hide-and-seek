@@ -1,0 +1,40 @@
+name: MazeHideAndSeek
+version: 1.0.0
+main: me.erick.Main
+api-version: 1.13
+commands:
+  join:
+    description: Entra em um time (hider/seeker)
+    usage: /join <hider|seeker>
+  leave:
+    description: Sai do jogo atual
+    usage: /leave
+  start:
+    description: Inicia o jogo
+    usage: /start
+    permission: mazehs.admin
+    permission-message: "§cVocê não tem permissão para iniciar o jogo!"
+  stop:
+    description: Para o jogo
+    usage: /stop [confirm]
+    permission: mazehs.admin
+    permission-message: "§cVocê não tem permissão para parar o jogo!"
+  switch:
+    description: Troca entre times
+    usage: /switch [confirm]
+  vote:
+    description: Vota para cancelar o jogo
+    usage: /vote
+  forcestart:
+    description: Força início do jogo (debug)
+    usage: /forcestart
+    permission: mazehs.admin
+  gamestate:
+    description: Mostra estado do jogo (debug)
+    usage: /gamestate
+    permission: mazehs.admin
+
+permissions:
+  mazehs.admin:
+    description: Permissão de administrador do MazeHS
+    default: op
