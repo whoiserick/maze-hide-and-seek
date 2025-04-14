@@ -1,0 +1,68 @@
+# Configurações do Maze Hide and Seek
+
+# Configurações de tempo (em segundos)
+game:
+  duration: 300       # Duração total da partida
+  countdown: 30       # Tempo de contagem regressiva inicial
+  seeker-delay: 10    # Atraso para seekers começarem
+  mid-game-join: false # Permitir entrar no meio do jogo
+  needed-votes: 3     # Votos necessários para cancelar o jogo
+
+# Configurações de webhook
+webhook:
+  url: ""            # URL do webhook Discord
+  enabled: false     # Habilitar webhook
+
+# Skins dos times (URLs de texturas)
+skins:
+  hider: "http://textures.minecraft.net/texture/1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a"
+  seeker: "http://textures.minecraft.net/texture/2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b"
+
+# Configurações do mapa
+map:
+  name: "Labirinto 1"
+  world: "world"
+
+  # Spawn dos times
+  spawn:
+    hiders:
+      x: 100.5
+      y: 70.0
+      z: 100.5
+      yaw: 0.0
+      pitch: 0.0
+    seekers:
+      x: 150.5
+      y: 70.0
+      z: 150.5
+      yaw: 0.0
+      pitch: 0.0
+
+  # Saídas do labirinto
+  exits:
+    - x: 200.5
+      y: 65.0
+      z: 200.5
+      radius: 3.0
+    - x: 50.5
+      y: 65.0
+      z: 50.5
+      radius: 3.0
+
+# Configurações de itens
+items:
+  spawn-interval: 30  # Intervalo entre spawns (segundos)
+  spawn-points:
+    - x: 100.5
+      y: 70.0
+      z: 100.5
+    - x: 120.5
+      y: 70.0
+      z: 90.5
+
+# Efeitos especiais
+effects:
+  cooldown-attack: 2  # Cooldown entre ataques (segundos)
+  seeker-speed-duration: 30  # Duração do efeito de velocidade
+  seeker-speed-level: 1  # Nível do efeito (0 = I, 1 = II)
+  golden-apple-invisibility: 15  # Duração da invisibilidade
